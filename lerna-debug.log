@@ -1,14 +1,14 @@
-0 silly argv { _: [ 'add' ],
-0 silly argv   globs: [],
-0 silly argv   lernaVersion: '3.20.2',
-0 silly argv   '$0': 'lerna',
-0 silly argv   pkg: 'package-b' }
-1 notice cli v3.20.2
-2 verbose rootPath /Users/lijicheng/jd/jdm-lerna
-3 error FetchError: request to https://registry.npmjs.org/package-b failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
-3 error     at ClientRequest.req.on.err (/Users/lijicheng/jd/jdm-lerna/node_modules/node-fetch-npm/src/index.js:68:14)
-3 error     at ClientRequest.emit (events.js:189:13)
-3 error     at TLSSocket.socketErrorListener (_http_client.js:399:9)
-3 error     at TLSSocket.emit (events.js:189:13)
-3 error     at emitErrorNT (internal/streams/destroy.js:82:8)
-3 error     at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+15 error Error: Command failed: git remote update
+15 error error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54
+15 error fatal: The remote end hung up unexpectedly
+15 error fatal: protocol error: bad pack header
+15 error error: Could not fetch origin
+15 error
+15 error Fetching origin
+15 error
+15 error     at makeError (/Users/lijicheng/jd/jdm-lerna/node_modules/execa/index.js:174:9)
+15 error     at Function.module.exports.sync (/Users/lijicheng/jd/jdm-lerna/node_modules/execa/index.js:338:15)
+15 error     at Object.execSync (/Users/lijicheng/jd/jdm-lerna/node_modules/@lerna/child-process/index.js:26:16)
+15 error     at updateRemote (/Users/lijicheng/jd/jdm-lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:26:16)
+15 error     at isBehindUpstream (/Users/lijicheng/jd/jdm-lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:11:3)
+15 error     at VersionCommand.initialize (/Users/lijicheng/jd/jdm-lerna/node_modules/@lerna/version/index.js:150:9)
