@@ -2,7 +2,7 @@
   "name": "jdm-copy",
   "version": "1.0.0",
   "description": "``` npm install jdm-copy --save ```",
-  "main": "./lib/copy.js",
+  "main": "./lib/index.js",
   "babel": {
     "presets": [
       "@babel/preset-env",
