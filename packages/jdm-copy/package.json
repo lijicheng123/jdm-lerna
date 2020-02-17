@@ -1,6 +1,6 @@
 {
   "name": "jdm-copy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "``` npm install jdm-copy --save ```",
   "main": "./lib/index.js",
   "babel": {
