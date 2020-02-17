@@ -1,0 +1,24 @@
+{
+  "name": "jdm-copy",
+  "version": "1.0.0",
+  "description": "``` npm install jdm-copy --save ```",
+  "main": "./lib/copy.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd-mobile": "^2.3.1"
+  }
+}

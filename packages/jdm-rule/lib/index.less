@@ -1,0 +1,88 @@
+.ruleModal{
+    width: 100%;
+    .am-modal-content{
+        background-color: transparent;
+        padding-top: 0;
+    }
+    .am-modal-body{
+        overflow: hidden;
+    }
+}
+.btn-close {
+    width: 25px;
+    height: 25px;
+    align-self: flex-end;
+}
+.rule-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #f1e1e1;
+    border-radius: 5px;
+    overflow: auto;
+    position: relative;
+    padding: 50px 20px;
+    
+    .ruleContent {
+        margin-top: 30px;
+        background: white;
+        border-radius: 4px;
+        padding-bottom: 50px;
+        .title {
+            position: relative;
+            margin: auto;
+            margin-bottom: 0;
+            margin-top: 58px;
+            font-size: 24px;
+            height: 40px;
+            text-align: center;
+            font-weight: bold;
+            .activity-title {
+                color: #666666;
+            }
+        }
+        .info {
+            white-space:pre-line;
+            height: 375px;
+            margin-top: 34px;
+            font-size: 16px;
+            text-align: left;
+            line-height: 35px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: #000;
+            overflow: scroll;
+        }
+        }
+        .mark {
+        width: 50px;
+        display: inline-block;
+        .mark-line {
+            display: inline-block;
+            width: 30px;
+            height: 0px;
+            border-bottom: 1px solid #666666;
+            vertical-align: middle;
+        }
+        .mark-left {
+            width: 5px;
+            height: 5px;
+            border: 1px solid #666666;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            display: inline-block;
+        }
+        .mark-right {
+            width: 5px;
+            height: 5px;
+            border: 1px solid #000;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            display: inline-block;
+            margin-left: -3px
+        }
+    }
+    
+}
