@@ -1481,11 +1481,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var clipboard;
-var defaultCopySuccess = '<p>“京东好借”<br />复制成功<br />快去粘贴搜索吧！</p>';
+var defaultCopySuccess = '<p>“太棒了”<br />复制成功<br />快去粘贴搜索吧！</p>';
 ;
-var defaultCopyFailure = '复制失败，请前往微信搜索“京东好借”！';
-var defaultCopyValue = "京东好借";
-var defaultButtonText = '一键复制“京东好借”';
+var defaultCopyFailure = '复制失败，自己手动复制吧！';
+var defaultCopyValue = "复制默认内容";
+var defaultButtonText = '点我复制';
 /**
  * 
  * @param { string copySuccess 成功提示}
@@ -1511,6 +1511,9 @@ var Copy = function Copy(_ref) {
   clipboard = new clipboard__WEBPACK_IMPORTED_MODULE_1___default.a('.clipboard');
   clipboard.on('success', function (e) {
     antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Toast"].info(copySuccess);
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
     e.clearSelection();
   });
   clipboard.on('error', function (e) {
@@ -1605,7 +1608,7 @@ module.exports = exported;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".jdm-copy-button {\n  font-size: 1.49925rem;\n  width: 20.23988rem;\n  height: 4.34783rem;\n  background: url('https://static-ftcms.jd.com/p/files/5daeee4bc7b7595df476a2f3.png') no-repeat;\n  background-size: contain;\n  display: block;\n  border: none;\n  margin: 0 auto;\n}\n.jdm-copy-area {\n  font-size: 0.89955rem;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 1px;\n  height: 1px;\n  background: rgba(255, 255, 255, 0.1);\n  border: none;\n  display: block;\n  opacity: 0.1;\n  padding: 0;\n  margin: 0;\n}\n", ""]);
+exports.push([module.i, ".jdm-copy-button {\n  font-size: 1.49925rem;\n  width: 20.23988rem;\n  height: 4.34783rem;\n  background-size: contain;\n  display: block;\n  border: none;\n  margin: 0 auto;\n}\n.jdm-copy-area {\n  font-size: 0.89955rem;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 1px;\n  height: 1px;\n  background: rgba(255, 255, 255, 0.1);\n  border: none;\n  display: block;\n  opacity: 0.1;\n  padding: 0;\n  margin: 0;\n}\n", ""]);
 // Exports
 module.exports = exports;
 

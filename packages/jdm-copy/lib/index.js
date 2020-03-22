@@ -4,11 +4,11 @@ import {Toast } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
 import "./copy.less";
 let clipboard;
-let defaultCopySuccess = '<p>“京东好借”<br />复制成功<br />快去粘贴搜索吧！</p>';
+let defaultCopySuccess = '<p>“太棒了”<br />复制成功<br />快去粘贴搜索吧！</p>';
 ;
-let defaultCopyFailure = '复制失败，请前往微信搜索“京东好借”！';
-const defaultCopyValue = "京东好借"
-const defaultButtonText = '一键复制“京东好借”'
+let defaultCopyFailure = '复制失败，自己手动复制吧！';
+const defaultCopyValue = "复制默认内容"
+const defaultButtonText = '点我复制'
 /**
  * 
  * @param { string copySuccess 成功提示}
@@ -32,11 +32,16 @@ const Copy = ({
     clipboard = new ClipboardJS('.clipboard');
     clipboard.on('success', function (e) {
         Toast.info(copySuccess);
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
         e.clearSelection();
     });
     clipboard.on('error', function (e) {
         Toast.info(copyFailure);
     });
+
     return (
         <div className="jdm-copy-wrap">
             <textarea className="jdm-copy-area" id="gongzhonghao" defaultValue={copyValue} style={textareaStyle}></textarea>
