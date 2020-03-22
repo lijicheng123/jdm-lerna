@@ -5,4 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.2](https://github.com/lijicheng123/jdm-lerna/compare/v1.0.1...v1.0.2) (2020-03-22)
 
-**Note:** Version bump only for package just-copy
+**Note:** Version bump only for package just-copy 哈哈哈
